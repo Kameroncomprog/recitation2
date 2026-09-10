@@ -1,5 +1,7 @@
 package recitation;
 
+
+
 /**
  * Exercise 8 — Reaching into a String.
  *
@@ -29,9 +31,12 @@ public class StringBasics {
      * @param last  the last name
      * @return the two initial letters
      */
-    public String initials(String first, String last) {
-        return null;
+
+    public String initials(String first, String last  ) {
+        String response = first.charAt(0)+""+last.charAt(0);
+        return response;
     }
+
 
     /**
      * The last character of the string.
@@ -42,7 +47,7 @@ public class StringBasics {
      * @return its final character
      */
     public char lastCharacter(String s) {
-        return ' ';
+        return s.charAt(s.length() - 1);
     }
 
     /**
@@ -57,6 +62,6 @@ public class StringBasics {
      * @return its first three characters
      */
     public String firstThree(String s) {
-        return null;
+        return s.substring(0,3);
     }
 }

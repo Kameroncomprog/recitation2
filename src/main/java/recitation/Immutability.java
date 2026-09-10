@@ -24,9 +24,11 @@ public class Immutability {
      * @return the same text in upper case
      */
     public String shout(String s) {
-        return null;
+        if (s == null) {
+            return null;
+        }
+        return s.toUpperCase();
     }
-
     /**
      * The text with leading and trailing spaces removed.
      *
@@ -36,6 +38,10 @@ public class Immutability {
      * @return the text without surrounding whitespace
      */
     public String trimmed(String s) {
-        return null;
+        if (s == null) {
+            return null;
+        }
+
+        return s.trim();
+    };
     }
-}

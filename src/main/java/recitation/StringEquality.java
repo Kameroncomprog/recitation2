@@ -24,6 +24,13 @@ public class StringEquality {
      * @return whether they hold the same text
      */
     public boolean sameText(String a, String b) {
+        if (a == null && b == null) {
+            return true;
+        }
+        if (a == null || b == null) {
+            return false;
+        }
+
         return false;
     }
 
@@ -41,6 +48,7 @@ public class StringEquality {
      * @return whether they are the same object
      */
     public boolean sameObject(String a, String b) {
-        return true;
+        return a == b;
+
     }
 }

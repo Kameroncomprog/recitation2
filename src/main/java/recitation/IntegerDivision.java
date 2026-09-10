@@ -19,7 +19,7 @@ public class IntegerDivision {
      * @return n divided by 2, truncated toward zero
      */
     public int half(int n) {
-        return 0;
+        return n/2;
     }
 
     /**
@@ -34,7 +34,7 @@ public class IntegerDivision {
      * @return n divided by 2, keeping the fraction
      */
     public double exactHalf(int n) {
-        return 0.0;
+        return n/2.5;
     }
 
     /**
@@ -42,11 +42,11 @@ public class IntegerDivision {
      *
      * average(7, 10) is 8 — the true average is 8.5 and the .5 is discarded.
      *
-     * @param a first number
-     * @param b second number
+     * @param n first number
+     * @param v second number
      * @return their average, truncated toward zero
      */
-    public int average(int a, int b) {
-        return 0;
+    public int average(int n, int v) {
+        return n+v/2;
     }
 }
